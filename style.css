@@ -1,0 +1,589 @@
+/*--Universal Styles--*/
+html {
+    display: block;
+    font-family: helvetica;
+    font-size 18px; }
+
+head {
+    display: none;
+}
+
+body {
+    display: block;
+    line-height: 1.4rem;
+}
+
+div {
+    display: block;
+}
+
+.page-container {
+    border: solid lightgrey .5px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.mobile {
+    display: block;
+    width: 480px;
+}
+
+/*--Logo & Nav Bar--*/
+header {
+    display: block;
+}
+
+.company-name {
+    display: flex;
+    justify-content: space-between;
+    color: silver;
+    align-items: center;
+    height: 64px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 3rem;
+    padding-left: 24px;
+}
+
+.logo span {
+    height: 32px;
+    font-size: 1.2rem;
+    text-shadow: 1px 2px 5px lightgrey;
+}
+
+color {
+    color: grey;
+    font-weight: bold;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-right: 24px;
+}
+
+.nav-bar span {
+    margin-left: 16px;
+}
+
+.nav-bar span:hover {
+    text-shadow: 5px 5px 5px grey;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/*--Media Queries--*/
+@media only screen and (max-device-width: 480px) {
+    /*--CSS Ruleset for smartphones, Android phones, landscape iPhone--*/
+    .company-name {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        height: 64px;
+        width: 100%;
+        padding: 16px 0;
+        margin: 0 auto;
+    }
+
+    .mobile-nav img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/*--Main Head--*/
+.main-page {
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.main-page img {
+    height: auto;
+    width: 57%;
+    padding: 32px 24px;
+}
+
+.description {
+    display: block;
+    width: 25%;
+    padding-bottom: 1.5rem;
+    padding-left: 24px;
+}
+
+.description h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: helvetica;
+    line-height: 2rem;
+}
+
+.description h2 {
+    color: grey;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+
+.button {
+    color: white;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 2rem;
+    border-radius:10px;
+    /* background-image: linear-gradient(to bottom right, #777, #ddd); */
+    box-shadow: 4px 4px 5px black;
+}
+
+.button:focus, .button:hover {
+    background-color: darkgrey;
+}
+
+.button:active {
+    box-shadow: inset 5px 5px 6px #888;
+}
+
+.button span {
+    font-size: 1rem;
+}
+
+.button span:hover {
+    color:white;
+}
+
+.button span:active {
+
+}
+
+/*--Media Quueries--*/
+@media only screen and (max-device-width: 480px) {
+    /*--CSS Ruleset for smartphones, Android phones, landscape iPhone--*/
+    .main-page {
+        display: block;
+        align-items: center;
+        background-color: lightgrey;
+        padding-bottom: 16px;
+    }
+
+    .main-page img {
+        width: 100%;
+        padding: unset;
+    }
+
+    .description {
+        width: 100%;
+        padding-bottom: unset;
+        padding-left: unset;
+        display: block;
+    }
+
+    .description h1 {
+        color: black;
+        font-weight: bold;
+        font-size: 6rem;
+        font-family: helvetica;
+        line-height: 6rem;
+        padding: 2rem;
+    }
+
+    .description h2 {
+        color: grey;
+        font-size: 3.8rem;
+        font-weight: bold;
+        line-height: 1.3;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .button {
+        color: white;
+        background-color: darkgrey;
+        display: flex;
+        justify-content: center;
+        margin: 0 2rem 3rem 2rem;
+        align-items: center;
+    }
+
+    .button span {
+        font-size: 3rem;
+        padding: 32px 0;
+    }
+}
+
+/*--Main Story--*/
+.main-info {
+    width: 61%;
+    padding: 32px 24px;
+}
+
+.main-img img {
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.main-descript {
+    width: 100%;
+}
+
+.main-descript h2 {
+    font-family: helvetica;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 24px;
+}
+
+.main-descript p {
+    font-size: 12px;
+    color: dimgrey;
+}
+
+.main-descript span {
+    font-family: helvetica;
+    font-weight: bold;
+    color: dimgrey;
+    font-size: 12px;
+}
+
+/*--Media Queries--*/
+@media only screen and (max-device-width: 480px) {
+    /*--CSS Ruleset for smartphones, Android phones, landscape iPhone--*/
+    .main-info {
+        width:unset;
+        padding:unset;
+    }
+
+    .main-story-img {
+        display:none;
+    }
+
+    .main-descript {
+        display:none;
+    }
+
+}
+
+/*--Supporting Stories--*/
+.supporting-stories {
+    width: 40%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.mobile-supp-stories {
+    display: none;
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.story .supp-img {
+    width: 40%;
+}
+
+.story img {
+    width: 37%;
+    height: auto;
+    padding: 0 16px 16px 16px;
+}
+
+.story.one:hover {
+    background-color:lightgrey;
+}
+
+.story.two {
+    padding-top: 16px;
+}
+
+.story.two:hover {
+    background-color:lightgrey;
+}
+
+.story.three {
+    padding-top: 16px;
+}
+
+.story.three:hover{
+    background-color:lightgrey;
+}
+
+.supp-descript h2 {
+    font-family: helvetica;
+    font-weight: bold;
+    color: dimgrey;
+}
+
+.supp-descript h3 {
+    font-family: helvetica;
+    font-size: 12px;
+    color: dimgrey;
+}
+
+.supp-descript span {
+    color: cornflowerblue;
+    font-size: 12px;
+}
+
+/*--Media Queries--*/
+@media only screen and (max-device-width: 480px) {
+    /*--CSS Ruleset for smartphones, Android phones, landscape iPhone--*/
+    .supporting-stories {
+        display: none;
+    }
+
+    .mobile.supporting-stories {
+        display: block;
+        width: 100%;
+        padding: unset;
+    }
+
+    .mobile-supp-stories {
+        display: block;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .story {
+        display: block;
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+    .story img {
+        display: block;
+        width: 100%;
+        padding: unset;
+    }
+
+    .mobile.supp-stories {
+        padding: 16px;
+    }
+
+    .supp-descript {
+        padding: 32px;
+        font-size: 3rem;
+        line-height: 2rem;
+    }
+
+    .supp-descript h2 {
+        padding-bottom: 16px;
+    }
+
+    .supp-descript h3 {
+        padding-bottom: 16px;
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .supp-descript span {
+        font-size:1.5rem;
+    }
+
+    .story.three {
+        padding-top: 16px;
+        background-color: unset;
+        padding-bottom: unset;
+    }
+}
+
+/*--Start learning--*/
+.banner.one {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    font-family: helvetica;
+    font-weight: bold;
+    color: black;
+}
+
+/*--Media Queries--*/
+@media only screen and (max-device-width:480px) {
+    /*--CSS Ruleset for smartphones, Android phones, landscape iPhone--*/
+    .banner.one {
+        background-color:unset;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .banner h2 {
+        font-size: 5rem;
+        font-family:helvetica;
+    }
+}
+
+/*--Programs--*/
+.programs {
+    background-color: lightgrey;
+    padding: 0px 72px 32px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.course {
+    background-color: white;
+    width: 30%;
+    margin-bottom: 32px;
+}
+
+.course:focus, .course:hover {
+    box-shadow: 5px 5px 5px #777;
+}
+
+.course:active {
+    background-image: inset 6px 6px 5px #888;
+}
+
+.course img {
+    height: auto;
+    width: 100%;
+}
+
+.pro-descript {
+    padding-left: 16px;
+    padding: 0 16px 24px 16px;
+    background-color: white;
+}
+
+.pro-descript h2 {
+    color: dimgrey;
+    font-family: helvetica;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.pro-descript span {
+    font-size: 12px;
+    color: lightgrey;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.pro-descript p {
+    color: lightgrey;
+    font-family: helvetica;
+    font-size: 12px;
+    line-height: 19px;
+    justify-content: center;
+}
+
+.mobile-programs {
+    display:none;
+}
+
+/*--Media Queries--*/
+@media only screen and (max-device-width:480px) {
+    /*--CSS Ruleset for smartphones, Android phones, landscape iPhone--*/
+    .programs {
+        display:none;
+    }
+
+    .mobile-programs {
+        display: block;
+        justify-content: center;
+        padding: 2rem 2rem 3rem 2rem;
+    }
+
+    .mobile-programs span {
+        display:block;
+        font-family:helvetica;
+        font-size: 3rem;
+        line-height:1;
+        align-items:center;
+        background-color: lightgrey;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow:5px 5px 5px #888;
+        border-radius: 10px;
+    }
+
+    .mobile-programs span:active {
+        box-shadow: inset 4px 4px 5px #999;
+
+    }
+}
+
+/*--Thesis exhibit--*/
+.banner.two {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+video {
+    padding-bottom: 24px;
+    width: 100%;
+}
+
+/*--Media Queries--*/
+@media only screen and (max-device-width:480px) {
+    /*--CSS Ruleset for smartphones, Android phones, landscape iPhone--*/
+    .banner.two {
+        padding-bottom: 32px;
+        margin-bottom:32px;
+    }
+
+    video {
+        display:block;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*--Footer--*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid lightgrey .5px;
+    padding: 16px 24px;
+}
+
+footer p {
+    display: flex;
+    color: lightgrey;
+    font-family: helvetica;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer span {
+    color: lightgrey;
+    font-size: 12px;
+    font-weight: bold;
+}
